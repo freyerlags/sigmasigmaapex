@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX NETWORK</title>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: #00BFFF;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em;
+            text-shadow: 0 0 20px #00BFFF, 0 0 30px #00BFFF;
+            margin-top: 20%;
+        }
+        p {
+            text-align: center;
+            font-size: 1.5em;
+            text-shadow: 0 0 15px #00bfff;
+        }
+        .button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #075d79;
+            border: 2px solid #075d7a;
+            border-radius: 25px;
+            color: #ffffff;
+            font-size: 18px;
+            text-shadow: 0 0 10px #00BFFF;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            box-shadow: 0 0 20px #00BFFF;
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .box {
+            background-color: #005B99;
+            color: #00BFFF;
+            width: 200px;
+            height: 150px;
+            margin: 0 10px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 1.5em;
+            text-shadow: 0 0 10px #00BFFF;
+            box-shadow: 0 0 20px #00BFFF;
+        }
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>APEX NETWORK</h1>
+    <p>Welcome to the future of networking. experience unparalleled speed, security, and innovation.</p>
+    <a href="./site/index/gamehome.html/" class="button"><span>🚀</span> launch your experience</a>
+    <div class="box-container">
+        <div class="box">speed</div>
+        <div class="box">Security</div>
+        <div class="box">Innovation</div>
+    </div>
+    <script>
+        const particles = 100;
+        const container = document.body;
+
+        for (let i = 0; i < particles; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            const size = Math.random() * 10 + 5;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * window.innerWidth}px`;
+            particle.style.top = `${Math.random() * window.innerHeight}px`;
+            container.appendChild(particle);
+        }
+    </script>
+</body>
+</html>

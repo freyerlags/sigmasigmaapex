@@ -1,0 +1,27 @@
+{
+    "name": "apex-proxy",
+    "description": "idk",
+    "type": "module",
+    "engines": {
+        "npm": ">=17.6.0",
+        "node": ">=21.0.0"
+    },
+    "scripts": {
+        "start": "node index.mjs"
+    },
+    "dependencies": {
+        "@mercuryworkshop/bare-mux": "^2.1.7",
+        "@mercuryworkshop/epoxy-transport": "^2.1.27",
+        "@mercuryworkshop/libcurl-transport": "^1.4.0",
+        "@titaniumnetwork-dev/ultraviolet": "latest",
+        "compression": "^1.7.5",
+        "express": "^4.21.2",
+        "node-fetch": "^3.3.2",
+        "@mercuryworkshop/wisp-js": "^0.3.3",
+        "wisp-server-node": "latest"
+    },
+    "devDependencies": {
+        "eslint": "^8.36.0",
+        "prettier": "^2.8.4"
+    }
+}

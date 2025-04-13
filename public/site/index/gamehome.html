@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Games</title>
+    <link href="./assets/CSS/gamehome.css/" rel="stylesheet" />
+</head>
+<body>
+   <script>
+ function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+   </script>
+     
+     <div class="clock" id="clock"></div>
+    <div id="header">Apex Games</div>
+    <div id="game-box">
+        <img src="10-minutes-till-dawn.jpeg" alt="Ten Minutes Till Dawn">
+        <p>Active 3rd person FPS game that includes upgrading, try to survive</p>
+    </div>
+</body>
+</html>

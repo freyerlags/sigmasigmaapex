@@ -1,0 +1,35 @@
+body {
+            background-color: #001f3f;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .clock {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 24px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        #header {
+            color: #00ffff;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        #game-box {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+            border: 2px solid #00ffff;
+            padding: 10px;
+            background-color: #003366;
+        }
+        #game-box img {
+            width: 100%;
+            height: auto;
+        }
+
